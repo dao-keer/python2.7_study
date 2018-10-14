@@ -26,6 +26,8 @@ print "the rate is %d%%" %7
 #list是一个有序集合，索引-1返回list的最后一个元素
 list1 = [1, 2, 3, 4]
 print list1[0], list1[-1]
-#range(n)就可以生成0-(n-1)的整数序列，不包含n，n必须是整数，若n < 0，则list为空
+#range(n)就可以生成0-(n-1)的整数序列，不包含n，n必须是整数，若n < 0，则list为空集合
 list2 = range(-10)
 print list2
+#列表生成
+print [m + n for m in [1, 2, 3] for n in [3, 2, 1]]
