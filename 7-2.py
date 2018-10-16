@@ -1,6 +1,8 @@
 flag = True
 while(flag):
     age = raw_input('please tell me your age: ')
+    if age == 'quit':
+        break
     age = int(age)
     if age > 0 and age < 3:
         print 'free'
