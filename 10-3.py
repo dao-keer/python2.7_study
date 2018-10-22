@@ -16,3 +16,13 @@ def numAdd():
 	return sumRes
 
 print numAdd()
+
+def read_file(file_name):
+	try:
+		with open(file_name) as file_object:
+			print file_object.read()
+	except:
+		print 'sorry, the file named ' + file_name + 'is not found!'
+	
+read_file('./test1.txt')
+read_file('./test.txt')
